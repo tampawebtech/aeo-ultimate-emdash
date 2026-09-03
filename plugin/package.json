@@ -27,6 +27,11 @@
 	],
 	"author": "Tampa Web Tech",
 	"license": "MIT",
+	"homepage": "https://github.com/tampawebtech/aeo-ultimate-emdash",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tampawebtech/aeo-ultimate-emdash.git"
+	},
 	"peerDependencies": {
 		"emdash": ">=0.36.0"
 	},
