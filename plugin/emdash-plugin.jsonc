@@ -1,8 +1,6 @@
 {
 	"slug": "aeo-ultimate",
-	// PLACEHOLDER. Replace with the real Atmosphere (atproto) DID before
-	// publishing - the publish session must match this pinned publisher.
-	"publisher": "did:plc:aaaaaaaaaaaaaaaaaaaaaaaa",
+	"publisher": "did:plc:szzarabwnqer73qfgezktvch",
 
 	"license": "MIT",
 	"author": { "name": "Tampa Web Tech" },
