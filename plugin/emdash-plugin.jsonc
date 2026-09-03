@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"author": { "name": "Tampa Web Tech" },
 	"security": { "url": "https://github.com/tampawebtech/aeo-ultimate-emdash/security/advisories/new" },
-	"description": "Publishes a connected Schema.org entity graph (Organization, WebSite, WebPage, Article, Breadcrumbs) plus Open Graph and answer-engine metadata.",
+	"description": "Connected Schema.org entity graph, Open Graph, and answer-engine optimization for EmDash.",
 
 	// Trust contract. Reads content and audits collections; supports content-based
 	// bulk generation and social metadata editing. No outbound network calls.

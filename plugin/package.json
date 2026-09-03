@@ -1,7 +1,7 @@
 {
 	"name": "@aeoultimate/emdash-aeo",
 	"version": "0.1.0",
-	"description": "AEO Ultimate — connected Schema.org entity graph, Open Graph and answer-engine metadata for EmDash.",
+	"description": "Connected Schema.org entity graph, Open Graph, and answer-engine optimization for EmDash.",
 	"type": "module",
 	"main": "dist/index.mjs",
 	"exports": {
