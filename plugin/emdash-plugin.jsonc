@@ -1,0 +1,24 @@
+{
+	"slug": "aeo-ultimate",
+	// PLACEHOLDER. Replace with the real Atmosphere (atproto) DID before
+	// publishing - the publish session must match this pinned publisher.
+	"publisher": "did:plc:aaaaaaaaaaaaaaaaaaaaaaaa",
+
+	"license": "MIT",
+	"author": { "name": "Tampa Web Tech" },
+	"security": { "url": "https://github.com/tampawebtech/emdash-aeo/security/advisories/new" },
+	"description": "Publishes a connected Schema.org entity graph (Organization, WebSite, WebPage, Article, Breadcrumbs) plus Open Graph and answer-engine metadata.",
+
+	// Trust contract. Reads content and audits collections; supports content-based
+	// bulk generation and social metadata editing. No outbound network calls.
+	"capabilities": ["content:read", "content:write"],
+	"allowedHosts": [],
+
+	"admin": {
+		"pages": [
+			{ "path": "/social", "label": "Social & Schema", "icon": "share" },
+			{ "path": "/indexing", "label": "Indexing", "icon": "search" },
+			{ "path": "/settings", "label": "AEO Settings", "icon": "settings" }
+		]
+	}
+}

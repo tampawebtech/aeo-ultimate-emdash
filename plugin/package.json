@@ -1,0 +1,42 @@
+{
+	"name": "@aeoultimate/emdash-aeo",
+	"version": "0.1.0",
+	"description": "AEO Ultimate — connected Schema.org entity graph, Open Graph and answer-engine metadata for EmDash.",
+	"type": "module",
+	"main": "dist/index.mjs",
+	"exports": {
+		".": {
+			"import": "./dist/index.mjs",
+			"types": "./dist/index.d.mts"
+		},
+		"./sandbox": "./dist/plugin.mjs"
+	},
+	"files": [
+		"dist",
+		"emdash-plugin.jsonc"
+	],
+	"keywords": [
+		"emdash",
+		"cms",
+		"plugin",
+		"seo",
+		"aeo",
+		"schema",
+		"json-ld",
+		"structured-data"
+	],
+	"author": "Tampa Web Tech",
+	"license": "MIT",
+	"peerDependencies": {
+		"emdash": ">=0.36.0"
+	},
+	"scripts": {
+		"build": "emdash-plugin build",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@emdash-cms/plugin-cli": "^0.9.0",
+		"@types/node": "^26.4.1",
+		"typescript": "^5.9.3"
+	}
+}
