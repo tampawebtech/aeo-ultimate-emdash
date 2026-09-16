@@ -5,18 +5,6 @@
 	"version": "0.1.0",
 	"description": "Connected Schema.org entity graph, Open Graph, and answer-engine optimization for EmDash.",
 	"type": "module",
-	"main": "dist/index.mjs",
-	"exports": {
-		".": {
-			"import": "./dist/index.mjs",
-			"types": "./dist/index.d.mts"
-		},
-		"./sandbox": "./dist/plugin.mjs"
-	},
-	"files": [
-		"dist",
-		"emdash-plugin.jsonc"
-	],
 	"marketplace": {
 		"pluginId": "aeo-ultimate",
 		"capabilities": [
@@ -63,17 +51,5 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/tampawebtech/aeo-ultimate-emdash.git"
-	},
-	"peerDependencies": {
-		"emdash": ">=0.36.0"
-	},
-	"scripts": {
-		"build": "emdash-plugin build",
-		"typecheck": "tsc --noEmit"
-	},
-	"devDependencies": {
-		"@emdash-cms/plugin-cli": "^0.9.0",
-		"@types/node": "^26.4.1",
-		"typescript": "^5.9.3"
 	}
 }
