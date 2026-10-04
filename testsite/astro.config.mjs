@@ -1,6 +1,6 @@
 import node from "@astrojs/node";
 import react from "@astrojs/react";
-import aeoUltimate from "@aeoultimate/emdash-aeo";
+import aeoUltimate from "aeoultimate-emdash";
 import auditLog from "@emdash-cms/plugin-audit-log";
 import { defineConfig, fontProviders } from "astro/config";
 import emdash, { local } from "emdash/astro";

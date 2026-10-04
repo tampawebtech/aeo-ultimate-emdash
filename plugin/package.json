@@ -1,5 +1,5 @@
 {
-	"name": "@aeoultimate/emdash-aeo",
+	"name": "aeoultimate-emdash",
 	"id": "aeo-ultimate",
 	"marketplacePluginId": "aeo-ultimate",
 	"version": "0.1.0",
@@ -15,7 +15,8 @@
 	},
 	"files": [
 		"dist",
-		"emdash-plugin.jsonc"
+		"emdash-plugin.jsonc",
+		"skills"
 	],
 	"marketplace": {
 		"pluginId": "aeo-ultimate",
@@ -62,7 +63,7 @@
 	"homepage": "https://github.com/tampawebtech/aeo-ultimate-emdash",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/tampawebtech/aeo-ultimate-emdash.git"
+		"url": "git+https://github.com/tampawebtech/aeo-ultimate-emdash.git"
 	},
 	"peerDependencies": {
 		"emdash": ">=0.36.0"

@@ -23,19 +23,17 @@ A comprehensive, sandboxed SEO and AEO plugin for [EmDash](https://emdashcms.com
 
 ## Installation
 
-### From the EmDash Plugin Registry
 ```bash
-emdash plugin add @aeoultimate/emdash-aeo
+npm install aeoultimate-emdash
 ```
 
-### Manual / Local Development
-Add the plugin dependency in your `package.json` and register it in `astro.config.mjs`:
+Then register it in `astro.config.mjs` and restart the dev server:
 
 ```ts
 // astro.config.mjs
 import { defineConfig } from "astro/config";
-import emdash from "emdash";
-import aeoPlugin from "@aeoultimate/emdash-aeo";
+import emdash from "emdash/astro";
+import aeoPlugin from "aeoultimate-emdash";
 
 export default defineConfig({
   integrations: [
@@ -64,6 +62,23 @@ This plugin runs in EmDash's security sandbox with the following permissions:
 * `content:read`: Auditing collections and extracting summaries.
 * `content:write`: Updating item SEO fields and media alt text during bulk actions.
 * `allowedHosts: []`: Strictly offline with no external outbound network access.
+
+---
+
+## Agent Skill
+
+The npm package ships an agent skill at `skills/aeo-ultimate/SKILL.md`, covering
+install, configuration, the FAQ repeater contract, the indexing report, and the
+platform limits worth knowing before you promise them.
+
+Copy it into your site so coding agents pick it up:
+
+```bash
+cp node_modules/aeoultimate-emdash/skills/aeo-ultimate/SKILL.md    .agents/skills/aeo-ultimate/SKILL.md
+```
+
+Then add a line for it under `## Skills` in your `AGENTS.md`. An agent asked to
+"add AEO to my EmDash site" can then wire the plugin up without guessing.
 
 ---
 

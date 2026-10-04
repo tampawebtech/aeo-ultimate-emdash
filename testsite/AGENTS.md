@@ -27,6 +27,7 @@ Agent skills are in `.agents/skills/`. Load them when working on specific tasks:
 - **building-emdash-site** -- Querying content, rendering Portable Text, schema design, seed files, site features (menus, widgets, search, SEO, comments, bylines). Start here.
 - **creating-plugins** -- Building EmDash plugins with hooks, storage, admin UI, API routes, and Portable Text block types.
 - **emdash-cli** -- CLI commands for content management, seeding, type generation, and visual editing flow.
+- **aeo-ultimate** -- SEO/AEO: connected Schema.org graph, Open Graph, FAQ and Service schema, indexing report. Use when adding or debugging structured data.
 
 ## Documentation
 
